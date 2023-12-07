@@ -22,4 +22,24 @@
 Проверить, чтобы все работало без ошибок в консоли */
 
 "use strict";
-const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?");
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+const personalMovieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  private: false,
+};
+console.log(personalMovieDB["count"]);
+
+const lastSeenFilm1 = prompt("Один из последних просмотренных фильмов?"),
+  whatRaiting1 = prompt("На сколько оцените его?");
+
+const lastseenfilm2 = prompt("Один из последних просмотренных фильмов?"),
+  whatRaiting2 = prompt("На сколько оцените его?");
+
+const movies = {
+  [lastSeenFilm1]: whatRaiting1,
+  [lastseenfilm2]: whatRaiting2,
+};
+console.log(movies);
