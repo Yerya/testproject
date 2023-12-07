@@ -22,7 +22,7 @@
 Проверить, чтобы все работало без ошибок в консоли */
 
 "use strict";
-const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?");
 const personalMovieDB = {
   count: numberOfFilms,
   movies: {},
@@ -35,11 +35,15 @@ console.log(personalMovieDB["count"]);
 const lastSeenFilm1 = prompt("Один из последних просмотренных фильмов?"),
   whatRaiting1 = prompt("На сколько оцените его?");
 
-const lastseenfilm2 = prompt("Один из последних просмотренных фильмов?"),
+const lastSeenFilm2 = prompt("Один из последних просмотренных фильмов?"),
   whatRaiting2 = prompt("На сколько оцените его?");
 
-const movies = {
-  [lastSeenFilm1]: whatRaiting1,
-  [lastseenfilm2]: whatRaiting2,
-};
-console.log(movies);
+// const movies = {
+//   [lastSeenFilm1]: whatRaiting1,
+//   [lastseenfilm2]: whatRaiting2,
+// };
+// console.log(movies);
+personalMovieDB.hey = "abobus";
+personalMovieDB.movies[lastSeenFilm1] = whatRaiting1;
+personalMovieDB.movies[lastSeenFilm2] = whatRaiting2;
+console.log(personalMovieDB);
