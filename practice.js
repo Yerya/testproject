@@ -9,6 +9,7 @@ const obj = {
 obj[3] = 3;
 // console.log(obj.age);
 console.log(obj);
+("new change");
 
 const emptyArr = [];
 
