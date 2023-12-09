@@ -80,3 +80,4 @@ const cola = 0;
 hamburger >= 2 && cola && fries
   ? console.log("Great place to eat")
   : console.log("We need to change place to eat");
+
