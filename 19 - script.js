@@ -32,11 +32,11 @@ const personalMovieDB = {
 };
 console.log(personalMovieDB["count"]);
 
-const lastSeenFilm1 = +prompt("Один из последних просмотренных фильмов?"),
-  whatRaiting1 = prompt("На сколько оцените его?");
+const lastSeenFilm1 = prompt("Один из последних просмотренных фильмов?"),
+  whatRaiting1 = +prompt("На сколько оцените его?");
 
-const lastSeenFilm2 = +prompt("Один из последних просмотренных фильмов?"),
-  whatRaiting2 = prompt("На сколько оцените его?");
+const lastSeenFilm2 = prompt("Один из последних просмотренных фильмов?"),
+  whatRaiting2 = +prompt("На сколько оцените его?");
 
 // const movies = {
 //   [lastSeenFilm1]: whatRaiting1,
