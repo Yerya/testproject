@@ -48,16 +48,18 @@ personalMovieDB.hey = "abobus";
 //начинается с глагола
 function rememberMyFilms() {
   for (let i = 0; i < 2; i++) {
-    const lastSeenFIlm = prompt("Один из последних просмотренных фильмов?");
-    const whatRaiting = +prompt("На сколько оцените его?");
+    const lastSeenFIlm = prompt(
+      "Один из последних просмотренных фильмов?"
+    ).trim();
+    const whatRaiting = +prompt("На сколько оцените его?").trim();
 
     lastSeenFIlm && whatRaiting && lastSeenFIlm.length < 50
       ? (personalMovieDB.movies[lastSeenFIlm] = whatRaiting)
       : i--;
   }
-}
+} // но как удалять, если пользователь будет вводить пробелы? Воспользуемся методом trim - удаляет пробелы с начала до конца строки
 
-// rememberMyFilms();
+rememberMyFilms();
 
 function detectPersonalLevel() {
   personalMovieDB["count"] < 10
