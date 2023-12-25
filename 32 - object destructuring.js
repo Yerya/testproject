@@ -63,7 +63,7 @@ for (let key in options) {
       //обращаемся к объекту внутри options
       console.log(
         `В объекте ${key} cвойство ${subkey} имеет значение ${options[key][subkey]}`
-      ); //[key][subkey] тк свойство внутри свойства
+      ); //[key][subkey] тк свойство внутри свойства, чтобы достучаться до значения
     }
   } else {
     console.log(`Свойство ${key} имеет значение ${options[key]}`);
