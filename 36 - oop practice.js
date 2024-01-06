@@ -79,4 +79,5 @@ const soldier = {
 
 // на практике сразу знаем что будет какой то основной прототип и его экземпляры.
 const jonh = Object.create(soldier); //создали объект! джон будет прототипно наследоваться от солдата
-console.log(jonh.armor);
+jonh.armor = 500;
+console.log(jonh.__proto__.armor);
