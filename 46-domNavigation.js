@@ -37,7 +37,7 @@ console.log(document.querySelector('[data-current="3"]').nextSibling); //пол�
 console.log(document.querySelector('[data-current="3"]').previousSibling);
 
 //чтобы не попадаться на текстовые узлы и тд, существуют аналоги, чтобы получить именно след элемент
-console.log(document.querySelector('[data-current="3"]').nextElementSibling); //получили перенос строки.
+console.log(document.querySelector('[data-current="3"]').nextElementSibling); 
 //тоже самое для parentNode, будет parentElement и тд.
 console.log(document.querySelector('[data-current="3"]').parentElement);
 console.log(document.body.firstElementChild); //получаем именно первого элемента ребенка
