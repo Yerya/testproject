@@ -40,7 +40,7 @@ genre.textContent = "Драма";
 
 //3)
 bg.style.background = "url('img/bg.jpg')";
-// bg.style.backgroundPosition = "top";
+bg.style.backgroundPosition = "top";
 
 //4)
 // promoList[0].textContent = "fse";
@@ -69,3 +69,4 @@ movieDB.movies.forEach((film, i) => {
   li.classList = "promo__interactive-item";
   promoList.append(li);
 });
+
